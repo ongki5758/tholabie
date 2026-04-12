@@ -11,6 +11,9 @@ export default function Footer() {
               <img
                 src="/img/logo.webp"
                 alt="Logo Pondok Pesantren THOLABIE CIBS"
+                loading="lazy"
+                decoding="async"
+                referrerPolicy="no-referrer"
                 className="w-8 h-8 object-contain rounded-full shadow-sm group-hover:opacity-80 transition-opacity"
               />
               <span className="font-serif font-bold text-white tracking-wider">THOLABIE</span>

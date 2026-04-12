@@ -47,6 +47,7 @@ export default function Navbar() {
             <img
               src="/img/logo.webp"
               alt="Logo Pondok Pesantren THOLABIE CIBS"
+              referrerPolicy="no-referrer"
               className="w-10 h-10 object-contain rounded-full shadow-md group-hover:opacity-80 transition-opacity"
             />
             <div className="flex flex-col">

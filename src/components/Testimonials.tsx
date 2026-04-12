@@ -40,10 +40,11 @@ export default function Testimonials() {
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 bg-gray-200 rounded-full overflow-hidden border-2 border-primary/20 shadow-sm">
                 <img
-                  src="/img/dewan-pembina-tholabie.webp"
+                  src="https://picsum.photos/seed/scholar/200/200"
                   alt="Profil Dewan Pembina Pondok Pesantren THOLABIE CIBS"
                   loading="lazy"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
                 />
               </div>

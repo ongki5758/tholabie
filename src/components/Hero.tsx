@@ -58,6 +58,7 @@ export default function Hero() {
               <img
                 src="/img/pondok-pesantren-tholabie-malang-cibs.webp"
                 alt="Santri Pondok Pesantren THOLABIE CIBS Malang belajar teknologi digital"
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl z-20 flex justify-between items-center border border-white/50 animate-float">
@@ -101,6 +102,7 @@ export default function Hero() {
             <img
               src="/img/pondok-pesantren-tholabie-malang-cibs.webp"
               alt="Santri Pondok Pesantren THOLABIE CIBS Malang belajar teknologi digital"
+              referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl z-20 flex justify-between items-center border border-white/50 animate-float">
