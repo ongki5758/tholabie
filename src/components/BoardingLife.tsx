@@ -30,9 +30,9 @@ export default function BoardingLife() {
   ];
 
   const gallery = [
-    { src: '/img/pondok-pesantren-tholabie-malang.webp', label: 'Fasilitas Nyaman', delay: '' },
-    { src: '/img/pondok-tholabie-malang.webp', label: 'Pembelajaran Digital', delay: 'delay-100' },
-    { src: '/img/pesantren-tholabie-malang.webp', label: 'Kolaborasi Pembelajaran', delay: 'delay-200', hideMobile: true },
+    { src: 'img/pondok-pesantren-tholabie-malang.webp', label: 'Fasilitas Nyaman', delay: '' },
+    { src: 'img/pondok-tholabie-malang.webp', label: 'Pembelajaran Digital', delay: 'delay-100' },
+    { src: 'img/pesantren-tholabie-malang.webp', label: 'Kolaborasi Pembelajaran', delay: 'delay-200', hideMobile: true },
   ];
 
   return (

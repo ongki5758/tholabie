@@ -56,7 +56,7 @@ export default function Hero() {
             <div className="lg:hidden relative w-full aspect-[4/5] sm:aspect-square rounded-3xl overflow-hidden shadow-2xl animate-on-scroll delay-200 mb-8 mt-2">
               <div className="absolute inset-0 bg-secondary/20 mix-blend-multiply z-10 transition-opacity hover:opacity-0 duration-500"></div>
               <img
-                src="/img/pondok-pesantren-tholabie-malang-cibs.webp"
+                src="img/pondok-pesantren-tholabie-malang-cibs.webp"
                 alt="Santri Pondok Pesantren THOLABIE CIBS Malang belajar teknologi digital"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
@@ -100,7 +100,7 @@ export default function Hero() {
           <div className="hidden lg:block relative lg:ml-auto w-full max-w-lg aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl animate-on-scroll delay-200">
             <div className="absolute inset-0 bg-secondary/20 mix-blend-multiply z-10 transition-opacity hover:opacity-0 duration-500"></div>
             <img
-              src="/img/pondok-pesantren-tholabie-malang-cibs.webp"
+              src="img/pondok-pesantren-tholabie-malang-cibs.webp"
               alt="Santri Pondok Pesantren THOLABIE CIBS Malang belajar teknologi digital"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
