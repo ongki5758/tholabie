@@ -1,0 +1,18 @@
+import React from 'react';
+import { MessageCircle } from 'lucide-react';
+
+export default function StickyCTA() {
+  return (
+    <div className="md:hidden fixed bottom-0 left-0 w-full p-4 bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] z-50">
+      <a
+        href="https://wa.me/6285183003060"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-full py-3.5 bg-primary text-white font-bold rounded-xl shadow-lg active:scale-95 transition-transform"
+      >
+        <MessageCircle className="w-5 h-5 mr-2" />
+        Daftar Sekarang
+      </a>
+    </div>
+  );
+}

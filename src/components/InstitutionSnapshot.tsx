@@ -1,0 +1,64 @@
+import React from 'react';
+import { Moon, Award, Laptop, TrendingUp } from 'lucide-react';
+
+export default function InstitutionSnapshot() {
+  const cards = [
+    {
+      icon: <Moon className="w-6 h-6" />,
+      title: 'Asrama Islami',
+      desc: 'Pembangunan karakter & spiritual terstruktur',
+      bgColor: 'bg-emerald-50',
+      textColor: 'text-primary',
+      hoverBg: 'group-hover:bg-primary',
+      delay: '',
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      title: 'Kuliah Gratis',
+      desc: 'Beasiswa penuh 100% untuk Program D3',
+      bgColor: 'bg-yellow-50',
+      textColor: 'text-accent-dark',
+      hoverBg: 'group-hover:bg-accent',
+      delay: 'delay-100',
+    },
+    {
+      icon: <Laptop className="w-6 h-6" />,
+      title: 'Keahlian Digital',
+      desc: 'Kompetensi AI, Digital Marketing & Tech',
+      bgColor: 'bg-blue-50',
+      textColor: 'text-blue-600',
+      hoverBg: 'group-hover:bg-blue-600',
+      delay: 'delay-200',
+    },
+    {
+      icon: <TrendingUp className="w-6 h-6" />,
+      title: 'Siap Berkarier',
+      desc: 'Inkubasi kepemimpinan & kewirausahaan',
+      bgColor: 'bg-purple-50',
+      textColor: 'text-purple-600',
+      hoverBg: 'group-hover:bg-purple-600',
+      delay: 'delay-300',
+    },
+  ];
+
+  return (
+    <section className="relative -mt-10 lg:-mt-16 z-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className={`animate-on-scroll ${card.delay} bg-white p-6 rounded-2xl shadow-premium border border-gray-50 flex flex-col items-start hover:-translate-y-1 transition-transform duration-300 group`}
+          >
+            <div
+              className={`w-12 h-12 rounded-full ${card.bgColor} ${card.textColor} flex items-center justify-center mb-4 ${card.hoverBg} group-hover:text-white transition-colors`}
+            >
+              {card.icon}
+            </div>
+            <h3 className="font-bold text-secondary text-sm md:text-base mb-1">{card.title}</h3>
+            <p className="text-xs md:text-sm text-gray-500">{card.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
