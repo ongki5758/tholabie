@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { motion, useScroll, useSpring } from 'motion/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import InstitutionSnapshot from './components/InstitutionSnapshot';
@@ -18,6 +19,13 @@ import Footer from './components/Footer';
 import StickyCTA from './components/StickyCTA';
 
 export default function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -42,8 +50,18 @@ export default function App() {
 
   return (
     <div className="font-sans text-secondary bg-surface antialiased selection:bg-primary selection:text-white overflow-x-hidden">
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-primary z-[60] origin-left"
+        style={{ scaleX }}
+      />
+      
       <Navbar />
-      <main>
+      
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
         <Hero />
         <InstitutionSnapshot />
         <ProblemSolution />
@@ -58,7 +76,8 @@ export default function App() {
         <Testimonials />
         <FAQ />
         <FinalCTA />
-      </main>
+      </motion.main>
+      
       <Footer />
       <StickyCTA />
     </div>
