@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4 group">
               <img
-                src="/img/logo.webp"
+                src="/img/logo.png"
                 alt="Logo Pondok Pesantren THOLABIE CIBS"
                 loading="lazy"
                 decoding="async"
